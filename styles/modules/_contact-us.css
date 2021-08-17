@@ -1,0 +1,11 @@
+.contact-us{
+
+width:80%;
+margin-left:10%;
+
+&--gap{
+  height:30px;
+  width:100%;
+}
+
+}

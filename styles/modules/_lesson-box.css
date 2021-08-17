@@ -1,0 +1,42 @@
+.lesson-box{
+  display:none;
+
+  &__list-item{
+    margin-left:auto;
+    margin-right:auto;
+    width:85%;
+    height:40px;
+    margin-bottom:4px;
+    position:relative;
+    display:flex;
+
+
+    &--number{
+      font-weight:1000;
+      padding-left:2px;
+      color:$mainOrange;
+    }
+
+    &--incorrect{
+      color:red;
+    }
+
+    &--time{
+      color:blue;
+    }
+
+    &--attempts{
+      color:green;
+    }
+
+    &--wide{
+      width:20%;
+      line-height:40px;
+    }
+
+  }
+
+  &--visible{
+    display:block;
+  }
+}

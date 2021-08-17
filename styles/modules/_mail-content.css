@@ -1,0 +1,54 @@
+#mail-content{
+position: fixed;
+bottom:0px;
+background-image: linear-gradient(to bottom, #ffa63a ,#d88b2d);
+opacity: 95%;
+display:flex;
+justify-content: space-evenly;
+width:100%;
+display:none;
+
+
+&--title{
+  font-weight:bold;
+  color:white;
+  font-size:1rem;
+  text-align: center;
+  padding:0.2rem;
+  height:fit-content;
+  margin-top:auto;
+  margin-bottom:auto;
+
+  @mixin atSmall{
+    font-size:1.5rem;
+  }
+
+  @mixin atMedium{
+    font-size:2rem;
+  }
+}
+
+&--container{
+  padding:0.2rem;
+  padding-right:1rem;
+}
+
+&--close{
+  height:32px;
+  width:32px;
+  opacity:80%;
+  position:absolute;
+  top:5px;
+  right:5px;
+
+
+  i{
+    cursor:pointer;
+  }
+
+  &:hover{
+    color:red;
+  }
+}
+
+}

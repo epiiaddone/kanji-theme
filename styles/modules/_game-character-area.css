@@ -1,0 +1,64 @@
+.game-character-area{
+    position:relative;
+    background-image: $backgroundBlue;
+    color:#fff;
+    font-size:1rem;
+
+    &__lesson-box{
+      position:absolute;
+      left:15px;
+      top:10px;
+      font-size:1rem;
+      color:#fff;
+    }
+
+    &__lesson-stats-box{
+      position:absolute;
+      right:15px;
+      top:10px;
+      color:#fff;
+
+      i{
+        color:#fff;
+        margin-right:15px;
+      }
+    }
+
+    &__game-character-display{
+      height:$gameCharacterAreaHeight;
+      width:100%;
+      text-align:center;
+      line-height:9rem;
+      font-size:4rem;
+
+      @mixin atSmall{
+        height:10rem;
+        line-height:12rem;
+        font-size:6rem;
+      }
+
+      @mixin atLarge{
+        height:12rem;
+        line-height:14rem;
+        font-size:8rem;
+      }
+    }
+
+    &__lesson-review-box{
+      position:absolute;
+      right:13px;
+      top:2rem;
+      text-align:center;
+      display:none;
+      line-height:1.4rem;
+
+      @mixin atSmall{
+        font-size:1.6rem;
+        right:50px;
+        line-height:2rem;
+      }
+    }
+
+
+
+}

@@ -1,0 +1,145 @@
+.front-page{
+  background-image:url('/wp-content/themes/heisig_theme/includes/images/bg5.png');
+  font-weight:bold;
+
+
+
+  &--gap{
+    width:100%;
+    height:10rem;
+
+  }
+
+  &__bottom-title{
+    width:100%;
+    text-align: center;
+    margin-bottom:2rem;
+    font-size:2.5rem;
+  }
+
+  &__game{
+    margin-top:2rem;
+    margin-bottom:2rem;
+
+    div{
+      cursor:none;
+    }
+
+    .game-character-area{
+      @mixin atMedium{
+          left:15%;
+            width:70%;
+      }
+    }
+  }
+
+  &--feature{
+
+    margin-bottom:2rem;
+
+    &__title{
+      position:relative;
+      left:2rem;
+      top:-2rem;
+
+      span{
+        font-size:2rem;
+      }
+    }
+
+    i{
+      color:#2baf36;
+    }
+  }
+
+  &__headline{
+      text-align: center;
+      font-size: 3.5rem;
+      border: 2px solid white;
+      border-radius:1px;
+      width:80%;
+      position:relative;
+      left:10%;
+      top:20px;
+
+      @mixin atSmall{
+        font-size:4.5rem;
+      }
+
+      @mixin atLarge{
+        font-size:8rem;
+      }
+
+      &--emphasis{
+        font-size:2.5rem;
+        font-weight:bold;
+        color:$mainOrange;
+        text-transform:uppercase;
+        width:100%;
+
+        @mixin atSmall{
+          font-size:5rem;
+        }
+      }
+
+  }
+
+  &__large-title{
+    font-size:2.5rem;
+  }
+
+  &--section{
+    position:relative;
+    width:80%;
+    left:10%;
+    margin-top:60px;
+    font-size:1.6rem;
+
+    &__small{
+      margin-bottom:2rem;
+      span{
+        font-size:2rem;
+        color:$mainOrange;
+      }
+
+      &__emphasis{
+        font-size:2.5rem;
+        margin-top:2rem;
+        margin-bottom:2rem;
+      }
+
+    }
+  }
+
+  &--problem{
+    &__title{
+      margin-bottom:40px;
+      font-size:2.5rem;
+    }
+
+    &__example__kanji-container{
+      display:flex;
+      flex-direction:row;
+      justify-content:space-between;
+      font-size:4rem;
+      margin-top:1rem;
+      margin-bottom:1rem;
+      color:$mainOrange;
+
+	  @mixin atMedium{
+		  justify-content:flex-start;
+	  }
+
+    }
+
+    &__example__explination{
+    span{
+      margin-bottom:1rem;
+    }
+  }
+  }
+
+
+
+
+}

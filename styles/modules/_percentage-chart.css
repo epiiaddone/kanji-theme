@@ -1,0 +1,58 @@
+.percentage-chart{
+  position:relative;
+
+  &__bar{
+    width:80%;
+    position:relative;
+    left:10%;
+    height:3rem;
+    background-color:#adadad;
+    border-radius: 3px;
+  }
+
+
+    &__percentage{
+      height: 3rem;
+      line-height: 3rem;
+      position: absolute;
+      top: 0%;
+      left:50%;
+      transform:translateX(-50%);
+      color:white;
+      font-weight:bold;
+      font-size:2rem;
+    }
+
+    &__subtitle{
+      width:100%;
+      text-align:center;
+      margin-top:0.3rem;
+      font-size:1rem;
+    }
+
+    &__extra-title{
+      width:100%;
+      text-align:center;
+      margin-top:0.3rem;
+      font-size:0.9rem;
+    }
+
+  &__fill{
+    height:100%;
+    border-radius: 3px;
+
+
+    &--color{
+    height:100%;
+    animation: percentage-width-grow 1s ease-out;
+    background-color: green;
+    width:100%;
+    border-radius: 3px;
+
+    }
+  }
+
+
+
+
+}

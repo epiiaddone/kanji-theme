@@ -1,0 +1,86 @@
+.current-progress{
+  width:100%;
+  position:relative;
+  border-bottom:5px solid #fff;
+  background-color:$statsPageBackground;
+
+  @mixin atLarge{
+    display:flex;
+    flex-direction:row;
+  }
+
+
+  &__title{
+    text-align: center;
+    color:#000;
+    font-size:2rem;
+    margin-top:0.6rem;
+    margin-bottom:0.6rem;
+  }
+
+
+  &__next-lesson{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    span{
+      font-size:3rem;
+    }
+
+
+    &--complete{
+      text-align:center;
+      color:green;
+      font-size:2rem;
+    }
+
+  }
+
+  &__data{
+
+  }
+
+  &__bottom-row{
+    @mixin atMedium{
+      display:flex;
+      flex-direction:row;
+    }
+
+    @mixin atLarge{
+      width:50%;
+    }
+
+  }
+
+  &__section{
+    min-height: 80px;
+    margin-bottom:20px;
+
+    @mixin atLarge{
+      width:50%;
+    }
+
+    &--top{
+
+    }
+
+    &--middle{
+      @mixin atMedium{
+        width:50%;
+      }
+    }
+
+    &--bottom{
+      @mixin atMedium{
+        width:50%;
+      }
+    }
+
+  }
+
+
+
+}

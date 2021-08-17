@@ -1,0 +1,27 @@
+.completed-sections{
+  width:100%;
+  border-top:$statsPageSectionBorder;
+  position:relative;
+  background-color:$statsPageBackground;
+  border-bottom: 20px;
+  border-bottom-color: $statsPageBackground;
+
+  &__title{
+    width:100%;
+    text-align:center;
+    font-size:1.5rem;
+    margin-bottom:15px;
+    margin-top:5px;
+
+    @mixin atSmall{
+      font-size:2rem;
+
+    }
+  }
+
+  &__orderby{
+    position:relative;
+    width:90%;
+    left:7.5%;
+  }
+}

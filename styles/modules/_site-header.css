@@ -1,0 +1,118 @@
+.site-header{
+  width:100%;
+  background-image: $backgroundOrange;
+  position:static;
+  height:$headerHeight;
+
+  @mixin atSmall{
+    height:$headerHeightTall;
+  }
+
+  &__logo{
+    position:absolute;
+    left:15px;
+    top:12px;
+    font-size:1rem;
+    font-weight:bold;
+
+
+
+    @mixin atSmall{
+      left:20px;
+      font-size:2rem;
+    }
+  }
+
+  &__access-buttons{
+    position:absolute;
+    display:flex;
+    flex-direction:row;
+    right:10px;
+    top:10px;
+
+    a{
+      cursor:pointer;
+    }
+
+    @mixin atMedium{
+
+    a:hover{
+      font-size:1.5rem;
+    }
+}
+  }
+
+  &__menu-icon{
+    width:20px;
+    height:19px;
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index:10;
+
+    @mixin atSmall{
+      top:20px;
+      right:20px;
+    }
+
+    @mixin atLarge{
+      display:none;
+    }
+
+
+    &::before{
+      content: "";
+      position:absolute;
+      top:0px;
+      left:0px;
+      width:20px;
+      height:3px;
+      background-color: #fff;
+      transform-origin: 0% 0%;
+      transition: transform .3s ease-out;
+    }
+
+    &__middle{
+      position:absolute;
+      top:8px;
+      left:0px;
+      width:20px;
+      height:3px;
+      background-color: #fff;
+      transition: all .3s ease-out;
+      transform-origin: 0 50%;
+    }
+
+    &::after{
+      content: "";
+      position:absolute;
+      bottom:0px;
+      left:0px;
+      width:20px;
+      height:3px;
+      background-color: #fff;
+      transform-origin: 0% 100%;
+      transition: transform .3s ease-out;
+    }
+
+      &--close-x{
+
+        &::before{
+          transform:rotate(45deg) scaleX(1.25);
+        }
+
+        div{
+          opacity:0;
+          transform: scaleX(0);
+        }
+
+        &::after{
+          transform:rotate(-45deg) scaleX(1.25) translateY(1px);
+        }
+
+    }
+
+    }
+
+
+}

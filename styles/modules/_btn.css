@@ -1,0 +1,74 @@
+.btn{
+  display:block;
+  border: 1px solid #adadad;
+  border-radius:3px;
+  width: 60px;
+  height:20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left:10px;
+  color:#000;
+  font-size:0.8rem;
+  cursor:pointer;
+
+  @mixin atSmall{
+    font-size:1.2rem;
+    width:100px;
+    height:40px;
+    line-height: 40px;
+  }
+
+  &--center{
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  &--large{
+    height:4rem;
+    width:6rem;
+    line-height:4rem;
+    font-size:2rem;
+    border-radius:6px;
+    border: 3px solid;
+  }
+
+  &--huge{
+    width:10rem;
+    height:4rem;
+    line-height:4rem;
+    font-size:2rem;
+    border-radius:6px;
+    border: 3px solid;
+
+  }
+
+  &--bottom{
+    margin-bottom:10px;
+  }
+
+  &--right{
+    position:absolute;
+    right:10px;
+    top:50%;
+    transform: translateY(-50%);
+  }
+
+  &--lesson{
+    margin-top:9px;
+
+    @mixin atSmall{
+      margin-top:-2px;
+    }
+  }
+
+  &--next-lesson{
+    height: 2.5rem;
+  width: 7rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  }
+
+  &--primary{
+    color:green;
+  }
+}

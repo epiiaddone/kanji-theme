@@ -1,0 +1,23 @@
+.access-denied{
+
+  &__logged-out{
+    font-size:6rem;
+    text-align: center;
+    color:black;
+  }
+
+  &__lesson-limit{
+    font-size:4rem;
+    text-align: center;
+    color:black;
+  }
+
+
+
+  &__subscription-needed{
+    span{
+      font-size:2rem;
+    }
+    
+  }
+}

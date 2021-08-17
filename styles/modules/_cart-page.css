@@ -1,0 +1,17 @@
+.cart-page{
+  width:80%;
+  margin-top:2rem;
+  position:relative;
+  left:10%;
+  margin-bottom:2rem;
+
+  .product-name a{
+    text-decoration:none;
+    pointer-events:none;
+    color:$mainOrange;
+  }
+
+  .product-thumbnail a{
+    pointer-events:none;
+  }
+}

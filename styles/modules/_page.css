@@ -1,0 +1,10 @@
+.page{
+
+
+  &__statistics{
+    &__section{
+      border-top:20px solid white;
+    }
+
+  }
+}

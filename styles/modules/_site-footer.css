@@ -1,0 +1,48 @@
+.site-footer{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-top:1px solid #adadad;
+  background-color: white;
+  position:absolute;
+  bottom:0px;
+  width:100%;
+  height:$footerHeight;
+
+
+  &--link-container{
+    display:inline;
+    align-items: center;
+    white-space:nowrap;
+  }
+
+  a{
+    text-decoration: none;
+    color:black;
+    padding-right:10px;
+    padding-left:10px;
+    border-right: 1px solid #adadad;
+    padding-top:5px;
+    cursor:pointer;
+    }
+
+    a:hover{
+      color:$mainOrange;
+    }
+
+
+  &--copywright{
+    display:inline;
+    padding-left:10px;
+    padding-top:5px;
+  }
+
+  &--gap{
+    height:80px;
+    width:100%;
+  }
+}

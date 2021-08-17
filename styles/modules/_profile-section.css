@@ -1,0 +1,50 @@
+.profile-section{
+
+  background-color:$statsPageBackground;
+  margin-top:1rem;
+  padding:3rem;
+
+
+  &__title{
+    font-size:2rem;
+    margin-bottom:1rem;
+  }
+
+  &__text{
+    margin-bottom:0.5rem;
+
+    &--bold{
+      font-weight:bold;
+    }
+  }
+
+  &__update-alert{
+    display:none;
+    margin-top:1rem;
+
+    &--success{
+      color:green;
+    }
+
+    &--failure{
+      color:red;
+    }
+  }
+
+  &__email{
+    margin-bottom:0.5rem;
+    &--highlighted{
+      font-weight:bold;
+    }
+  }
+
+  &__form-container{
+    margin-bottom:1rem;
+    min-height:50px;
+
+    input{
+      margin-top:0.3rem;
+    }
+
+  }
+}

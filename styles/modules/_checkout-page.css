@@ -1,0 +1,14 @@
+.checkout-page{
+  width:80%;
+  left:10%;
+  position:relative;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  padding-bottom:2rem;
+
+  .woocommerce-privacy-policy-text a{
+    text-decoration:none;
+    pointer-events: none;
+    color:#404040;
+  }
+}

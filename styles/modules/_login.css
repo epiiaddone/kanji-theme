@@ -1,0 +1,40 @@
+
+/*these are input in the custom css in the plugin page */
+
+
+  #nav{
+    display:none;
+  }
+
+body.login div#login form p label{
+color:black !important;
+}
+
+
+
+ body.login div#login p#backtoblog   a{
+      color:black !important;
+      position:relative;
+      top:-54px;
+      z-index:2;
+    }
+
+body.wp-core-ui div#login p.submit input.button{
+background-color:#d88b2d !important;
+}
+
+
+  .divfooter{
+    display:none;
+  }
+
+
+body.login div#login p.reset-pass{
+  top:-40px;
+}
+
+
+
+.forgetmenot{
+  display:none;
+}

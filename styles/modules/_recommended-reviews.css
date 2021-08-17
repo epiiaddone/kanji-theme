@@ -1,0 +1,24 @@
+.recommended-reviews{
+  width:100%;
+  border-top:$statsPageSectionBorder;
+  border-bottom:$statsPageSectionBorder;
+  position:relative;
+  background-color:$statsPageBackground;
+
+
+  &__title{
+    width:100%;
+    text-align:center;
+    font-size:1.5rem;
+    margin-bottom:15px;
+    margin-top:5px;
+
+    @mixin atSmall{
+      font-size:2rem;
+
+    }
+  }
+
+
+
+}

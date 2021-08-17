@@ -1,0 +1,83 @@
+.primary-nav{
+  height:230px;
+  max-height:0;
+  position:relative;
+  overflow:hidden;
+  transition: max-height 1s ease-out;
+
+  &--is-visible{
+    max-height:230px;
+  }
+
+
+  ul{
+    margin:0;
+    padding-left:2rem;
+    position:relative;
+  }
+
+  li{
+    list-style:none;
+    display:block;
+  }
+
+
+
+  a{
+    color:#000;
+    text-decoration:none;
+    font-weight:300;
+    display:block;
+    padding:12px 8px;
+    font-size:1.2rem;
+    cursor:pointer;
+    margin-top:0.3rem;
+
+      &.is-current-link{
+        color: $currentColorLink;
+      }
+
+      @mixin atSmall{
+        font-size:1.5rem;
+      }
+
+  }
+
+  a:hover{
+    font-size: 1.8rem;
+  }
+
+  @mixin atLarge{
+    height:$headerHeightTall;
+    max-height:$headerHeightTall;
+    position:absolute;
+    top:0px;
+    width:100%;
+
+    ul{
+      display:flex;
+      justify-content: flex-end;
+    }
+
+    li{
+      margin-right:20px;
+      margin-left:20px;
+      margin-top:6px;
+    }
+
+
+    li:hover{
+      margin-left:16px;
+      border:2px solid #adadad;
+      border-radius:10px;
+    }
+
+    a{
+      padding:6px 8px;
+    }
+    a:hover{
+      font-size:1.5rem;
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+/*colors*/
+$testColor: #ababab;
+$currentColorLink:#fabb99;
+$dontKnowRed: red;
+$dontKnowPink: pink;
+$mainOrange:#d88b2d;
+
+/*bg colors*/
+$backgroundOrange: linear-gradient(to bottom, #ffa63a ,#d88b2d);
+$backgroundBlue: linear-gradient(to bottom, #0af, #0093dd);
+$statsPageBackground: #efefef;
+
+
+/*heights*/
+$headerHeight:40px;
+$headerHeightTall:60px;
+$footerHeight:40px;
+$footerHeightAtSmall:40px;
+$gameCharacterAreaHeight:7rem;
+$gameCharacterAreaHeightAtSmall:10rem;
+$currentProgressHeight:180px;
+$recommendedReviewsHeight:290px;
+
+/*borders*/
+$statsPageSectionBorder: 5px solid #fff;

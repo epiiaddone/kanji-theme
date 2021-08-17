@@ -1,0 +1,55 @@
+.product-page{
+
+  > p:first-child{
+    display:none;
+  }
+
+  &--gap{
+    height:2rem;
+    width:100%;
+  }
+
+  .woocommerce{
+
+    &-LoopProduct-link{
+  pointer-events: none;
+    cursor: default;
+  }
+
+  &-loop-product__title{
+    display:none;
+  }
+
+    &-ordering{
+      display:none;
+    }
+
+    &-result-count{
+      display:none;
+    }
+
+    .price{
+      color:white !important;
+      font-size:1.5rem !important;
+      margin:1rem;
+    }
+
+    .add_to_cart_button{
+      background-color:white;
+      color:$mainOrange;
+    }
+
+
+    ul.products li.product{
+      width: 70%;
+      left: 15%;
+      text-align: center;
+
+      img{
+        display:none;
+      }
+    }
+  }
+
+
+}

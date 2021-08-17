@@ -1,0 +1,12 @@
+.text{
+
+  &--main{
+    color:$mainOrange;
+  }
+
+  &--heavy{
+    font-weight:1000;
+  }
+
+
+}
